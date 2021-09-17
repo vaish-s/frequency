@@ -9,6 +9,7 @@ public static void main(String args[])throws IOException
 {
 BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 int a,b,c,d=0,i;
+int v[] = new int[10];
 System.out.println("Input a number");
 a=Integer.parseInt(br.readLine());
 for(i=0;i<=9;i++)
@@ -23,6 +24,8 @@ if(c==i)
 d++;
 }
 }
+v[i]=d;
+if(v[i]!=0)
 System.out.println("Frequency of "+i+" is "+d);
 d=0;
 }}}
